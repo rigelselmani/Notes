@@ -28,8 +28,8 @@ function Create(props){
     }
 
     return <div className="Comment">
-              <input onChange={handleChange} type="text" placeholder="Title" name="title"/>
-              <textarea onChange={handleChange} name="content" placeholder="Take a note..." rows="3" />
+              <input onChange={handleChange} value={note.title} type="text" placeholder="Title" name="title"/>
+              <textarea onChange={handleChange} value={note.content} name="content" placeholder="Take a note..." rows="3" />
               <button onClick={handleClick}>Add</button>
            </div>
 }

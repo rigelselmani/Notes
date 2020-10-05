@@ -15,7 +15,11 @@ function App() {
   }
 
   function deleteNote(id){
-    console.log(id)
+    setNewNote(prevVal=>{
+      return prevVal.filter((note,index)=>{
+        return index !== id
+      })
+    })
   }
 
   return (

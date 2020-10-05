@@ -13,6 +13,11 @@ function App() {
       return [...prevVal,notes]
     })
   }
+
+  function deleteNote(id){
+    console.log(id)
+  }
+
   return (
     <div className="App">
       <Header />
@@ -23,7 +28,8 @@ function App() {
           key={index}
           id={index} 
           title={text.title}
-          content={text.content}/>
+          content={text.content}
+          onDelete={deleteNote}/>
       )})}
       <Footer />
     </div>

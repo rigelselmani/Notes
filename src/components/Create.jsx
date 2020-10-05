@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Create(){
+function Create(props){
 
     const [note,setNote]=useState({
         title:"",
@@ -8,14 +8,29 @@ function Create(){
     });
 
     function handleChange(event){
-      const inputValue=event.target.value;
-      setNote(inputValue);
+      const {value,name}=event.target;
+      setNote(inputValue=>{
+         return {
+             ...inputValue,
+             [name]:value
+         }
+      });
+    }
+
+    function handleClick(event){
+        props.addNote(note);
+        setNote({
+              title:"",
+              content:""
+        })
+
+        event.preventDefault()
     }
 
     return <div className="Comment">
               <input onChange={handleChange} type="text" placeholder="Title" name="title"/>
               <textarea onChange={handleChange} placeholder="Take a note..." rows="3" />
-              <button>Add</button>
+              <button onClick={handleClick}>Add</button>
            </div>
 }
 

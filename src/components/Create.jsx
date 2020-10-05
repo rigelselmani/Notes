@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Create(){
 
-    
+    const [note,setNote]=useState({
+        title:"",
+        content:""
+    });
 
     function handleChange(event){
       const inputValue=event.target.value;
-      console.log(inputValue)
+      setNote(inputValue);
     }
 
     return <div className="Comment">

@@ -1,9 +1,17 @@
 import React from "react";
 
 function Create(){
+
+    
+
+    function handleChange(event){
+      const inputValue=event.target.value;
+      console.log(inputValue)
+    }
+
     return <div className="Comment">
-              <input type="text" placeholder="Title" name="title"/>
-              <input type="text" placeholder="content" name="content" />
+              <input onChange={handleChange} type="text" placeholder="Title" name="title"/>
+              <textarea onChange={handleChange} placeholder="Take a note..." rows="3" />
               <button>Add</button>
            </div>
 }

@@ -8,3 +8,12 @@ font-family:sans-serif;
     color:white;
     font-size:20px;
 }
+
+.footer{
+    text-align: center;
+    background-color: #dfe6e9;
+    padding: 15px 15px;
+    bottom: 10px;
+    color:#ffffff;
+    font-size: 20px;
+}

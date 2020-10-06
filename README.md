@@ -1,4 +1,4 @@
-This is a deployed link of the project deployet link [https://glacial-eyrie-21309.herokuapp.com/]
+This is a deployed link of the project deployet link (https://glacial-eyrie-21309.herokuapp.com/)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

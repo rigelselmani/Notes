@@ -12,7 +12,7 @@ background: #eee;
 }
 
 .header{
-    background-color: #00b894;
+    background-color: #00a8ff;
     color:white;
     margin:auto;
     padding: 16px 32px;
@@ -33,22 +33,25 @@ footer {
     color:#ccc;
   }
   .note{
-    margin-left: 5%;
+    margin:16px;
+    background: #fff;
     box-shadow: 0 4px 8px #ccc;
     border-radius: 7px;
     padding:10px;
     width:240px;
-    margin-top:20px;
+    margin:18px;
     float: left;
-    font-size: 1.2em;
     word-wrap: break-word;
+}
+.note h3{
+    font-size: 1.1em;
 }
 .note P{
     margin: 6px 0 10px 0;
 }
 .note button{
     border-radius: 7%;
-    background:#00b894;
+    background:#00a8ff;
     padding:5px;
     border:none;
     float:right;
@@ -58,13 +61,12 @@ footer {
 }
 form{
     position: relative;
-    box-shadow: 0 1px 5px rgb(138, 137, 137);
     width:480px;
-    display: block;
     padding:10px;
     margin:30px auto 20px auto;
-    margin-top:60px;
+    background: #fff;
     border-radius: 8px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
 form input,
 form textarea{
@@ -78,10 +80,11 @@ form textarea{
 }
 form button{
     position: absolute;
-    background:#00b894;
+    background:#00a8ff;
     border-radius: 25px;
     padding: 11px 7px;
     right: 22px;
+    color:#fff;
     top: 122px;
     border:none;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);

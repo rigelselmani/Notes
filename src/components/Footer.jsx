@@ -5,7 +5,7 @@ function Footer(){
     var d = new Date();
     var n = d.getFullYear();
 
-    return <p className="footer">{n}</p>
+    return <footer><p>Copyright ⓒ {n}</p></footer>
 }
 
 export default Footer;

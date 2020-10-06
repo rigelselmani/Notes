@@ -1,53 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
 body{
 font-family:sans-serif;
+background: #eee;
 }
 
 .header{
     background-color: #00b894;
-    padding:5px 50% 5px 3%;
     color:white;
-    font-size:20px;
-}
-.Comment{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width:20%;
-    display: block;
-    padding:10px;
     margin:auto;
-    margin-top:60px;
-    border-radius: 15px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
-.note{
-    margin-left: 3%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px;
+h1{
+    color: #fff;
+    font-weight: 200;
+    font-family: "McLaren", cursive;
+}
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    font-size:22px;
+    height: 2.5rem;
+    color:#ccc;
+  }
+  .note{
+    margin-left: 5%;
+    box-shadow: 0 4px 8px #ccc;
+    border-radius: 7px;
     padding:10px;
-    width:13%;
+    width:240px;
     margin-top:20px;
+    float: left;
+    font-size: 1.2em;
+    word-wrap: break-word;
 }
-input{
-    font-size: 30px;
-    width:90%;
-    height:30px;
+.note P{
+    margin: 6px 0 10px 0;
+}
+.note button{
+    border-radius: 7%;
+    background:#00b894;
     padding:5px;
     border:none;
+    float:right;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-textarea{
-   font-size: 20px;
-   width:90%;
-   padding:5px;
-   border:none;
+form{
+    position: relative;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+    width:480px;
+    display: block;
+    padding:10px;
+    margin:30px auto 20px auto;
+    margin-top:60px;
+    border-radius: 8px;
 }
-button{
-    border-radius: 50%;
+form input,
+form textarea{
+    width:100%;
+    border:none;
+    padding:5px;
+    outline: none;
+    font-size: 1.3em;
+    font-family: inherit;
+    resize: none;
+}
+form button{
+    position: absolute;
     background:#00b894;
-}
-
-.footer{
-    text-align: center;
-    background-color: #dfe6e9;
-    padding: 15px 15px;
-    bottom: 10px;
-    color:#ffffff;
-    font-size: 20px;
+    border-radius: 25px;
+    padding: 11px 7px;
+    right: 22px;
+    top: 122px;
+    border:none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    outline: none;
+    cursor: pointer;
 }
